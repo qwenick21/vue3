@@ -8,7 +8,8 @@
         el-input(v-model="pair.value" placeholder="Value").flex-1.mr-2
         el-button(icon="el-icon-delete" @click="deletePair(index)")
     .preview-area.flex.flex-col.items-start.justify-start
-      el-tree(:data="parsedObject" :props="defaultProps" node-key="id")
+      .ml-4
+        el-tree(:data="parsedObject" :props="defaultProps" node-key="id")
 </template>
 
 <script lang="ts" setup>
